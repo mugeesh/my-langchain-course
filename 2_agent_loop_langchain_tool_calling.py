@@ -103,7 +103,7 @@ def ollama_chat_traced(messages):
 
 # ---- Agent Loop -----
 
-@traceable(name="LangCgain Agent Loop")
+@traceable(name="Olama Agent Loop")
 def run_agents(question: str):
     
     tools_dict = {

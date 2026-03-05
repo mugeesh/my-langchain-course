@@ -86,6 +86,7 @@ def run_agents(question: str):
         
         # Process each tool call
         for tool_call in tool_calls:
+            tool_call = tool_calls[0]
             tool_name = tool_call["name"]
             tool_args = tool_call["args"]
             tool_call_id = tool_call["id"]

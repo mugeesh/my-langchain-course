@@ -5,11 +5,9 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-from langsmith import traceable
 from langchain.chat_models import init_chat_model
 from langchain.tools import tool
 from langchain_core.messages import HumanMessage, SystemMessage, ToolMessage
-
 from langsmith import traceable
 
 MAX_ITERATIONS = 10

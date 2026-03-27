@@ -1,15 +1,13 @@
 from email import message
 from unittest import result
+
 from dotenv import load_dotenv
+
 load_dotenv()
 
-from langsmith import traceable
 import ollama
-
-
-from ollama import chat
-
 from langsmith import traceable
+from ollama import chat
 
 MAX_ITERATIONS = 10
 MODEL = "qwen3:1.7b"

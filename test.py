@@ -29,9 +29,9 @@ if __name__ == "__main__":
         # Add these specific parameters to satisfy OpenRouter's requirements
         model_kwargs={"encoding_format": "float"},
         headers={
-            "HTTP-Referer": "http://localhost:3000", # OpenRouter requires a referer
-            "X-Title": "LangChain Course"
-        }
+            "HTTP-Referer": "http://localhost:3000",  # OpenRouter requires a referer
+            "X-Title": "LangChain Course",
+        },
     )
 
     print(f"Using embedding model: {embeddings.model}")

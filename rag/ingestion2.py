@@ -1,4 +1,5 @@
 import os
+
 from dotenv import load_dotenv
 from langchain_community.document_loaders import TextLoader
 from langchain_ollama import OllamaEmbeddings  # Updated Import
@@ -24,13 +25,11 @@ if __name__ == "__main__":
     print("ingesting to Pinecone...")
 
     # Ensure this matches your Pinecone Index name exactly
-    index_name = os.environ['INDEX_NAME']
+    index_name = os.environ["INDEX_NAME"]
 
     try:
         vectorstore = PineconeVectorStore.from_documents(
-            text,
-            embeddings,
-            index_name=index_name
+            text, embeddings, index_name=index_name
         )
         print("✅ Successfully finished ingesting to Pinecone using Ollama!")
     except Exception as e:

@@ -1,3 +1,4 @@
+# use here OPEN API
 # import os
 #
 #     embeddings = OpenAIEmbeddings(
